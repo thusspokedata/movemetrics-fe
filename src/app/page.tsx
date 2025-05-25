@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { AddWorkoutDialog } from "@/components/workout/add-workout-dialog"
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { AddWorkoutDialog } from '@/components/workout/add-workout-dialog';
 
 export default function Home() {
   return (
@@ -99,5 +99,5 @@ export default function Home() {
         </Tabs>
       </div>
     </div>
-  )
+  );
 }

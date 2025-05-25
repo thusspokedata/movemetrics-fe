@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -6,8 +6,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import { AddWorkoutForm } from "./add-workout-form"
+} from '@/components/ui/dialog';
+import { AddWorkoutForm } from './add-workout-form';
 
 export function AddWorkoutDialog() {
   return (
@@ -25,5 +25,5 @@ export function AddWorkoutDialog() {
         <AddWorkoutForm />
       </DialogContent>
     </Dialog>
-  )
-} 
+  );
+}

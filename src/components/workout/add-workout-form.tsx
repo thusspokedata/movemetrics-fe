@@ -1,9 +1,9 @@
-"use client"
+'use client';
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import * as z from "zod"
-import { Button } from "@/components/ui/button"
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
@@ -12,64 +12,60 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { Calendar } from "@/components/ui/calendar"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
-import { cn } from "@/lib/utils"
-import { format } from "date-fns"
-import { CalendarIcon } from "lucide-react"
+} from '@/components/ui/select';
+import { Calendar } from '@/components/ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { cn } from '@/lib/utils';
+import { format } from 'date-fns';
+import { CalendarIcon } from 'lucide-react';
 
 const workoutFormSchema = z.object({
   activity: z.string({
-    required_error: "Please select an activity.",
+    required_error: 'Please select an activity.',
   }),
   date: z.date({
-    required_error: "Please select a date.",
+    required_error: 'Please select a date.',
   }),
   startTime: z.string({
-    required_error: "Please select a start time.",
+    required_error: 'Please select a start time.',
   }),
   duration: z.string({
-    required_error: "Please enter the duration.",
+    required_error: 'Please enter the duration.',
   }),
   notes: z.string().optional(),
-})
+});
 
-type WorkoutFormValues = z.infer<typeof workoutFormSchema>
+type WorkoutFormValues = z.infer<typeof workoutFormSchema>;
 
 const activities = [
-  { value: "gym", label: "Gym" },
-  { value: "bjj", label: "Brazilian Jiu-Jitsu" },
-  { value: "running", label: "Running" },
-  { value: "cycling", label: "Cycling" },
-  { value: "swimming", label: "Swimming" },
-  { value: "yoga", label: "Yoga" },
-  { value: "other", label: "Other" },
-]
+  { value: 'gym', label: 'Gym' },
+  { value: 'bjj', label: 'Brazilian Jiu-Jitsu' },
+  { value: 'running', label: 'Running' },
+  { value: 'cycling', label: 'Cycling' },
+  { value: 'swimming', label: 'Swimming' },
+  { value: 'yoga', label: 'Yoga' },
+  { value: 'other', label: 'Other' },
+];
 
 export function AddWorkoutForm() {
   const form = useForm<WorkoutFormValues>({
     resolver: zodResolver(workoutFormSchema),
     defaultValues: {
-      notes: "",
+      notes: '',
     },
-  })
+  });
 
   function onSubmit(data: WorkoutFormValues) {
     // TODO: Implement form submission
-    console.log(data)
+    console.log(data);
   }
 
   return (
@@ -95,9 +91,7 @@ export function AddWorkoutForm() {
                   ))}
                 </SelectContent>
               </Select>
-              <FormDescription>
-                What type of workout did you do?
-              </FormDescription>
+              <FormDescription>What type of workout did you do?</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -113,17 +107,13 @@ export function AddWorkoutForm() {
                 <PopoverTrigger asChild>
                   <FormControl>
                     <Button
-                      variant={"outline"}
+                      variant={'outline'}
                       className={cn(
-                        "w-[240px] pl-3 text-left font-normal",
-                        !field.value && "text-muted-foreground"
+                        'w-[240px] pl-3 text-left font-normal',
+                        !field.value && 'text-muted-foreground'
                       )}
                     >
-                      {field.value ? (
-                        format(field.value, "PPP")
-                      ) : (
-                        <span>Pick a date</span>
-                      )}
+                      {field.value ? format(field.value, 'PPP') : <span>Pick a date</span>}
                       <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
                     </Button>
                   </FormControl>
@@ -133,16 +123,12 @@ export function AddWorkoutForm() {
                     mode="single"
                     selected={field.value}
                     onSelect={field.onChange}
-                    disabled={(date) =>
-                      date > new Date() || date < new Date("1900-01-01")
-                    }
+                    disabled={(date) => date > new Date() || date < new Date('1900-01-01')}
                     initialFocus
                   />
                 </PopoverContent>
               </Popover>
-              <FormDescription>
-                When did you do this workout?
-              </FormDescription>
+              <FormDescription>When did you do this workout?</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -187,9 +173,7 @@ export function AddWorkoutForm() {
               <FormControl>
                 <Input placeholder="Optional notes about your workout" {...field} />
               </FormControl>
-              <FormDescription>
-                Add any additional details about your workout.
-              </FormDescription>
+              <FormDescription>Add any additional details about your workout.</FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -198,5 +182,5 @@ export function AddWorkoutForm() {
         <Button type="submit">Add Workout</Button>
       </form>
     </Form>
-  )
-} 
+  );
+}
