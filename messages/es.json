@@ -15,6 +15,25 @@
       "activeFriends": "Amigos Activos",
       "mostActive": "Más Activo",
       "favoriteActivity": "Actividad Favorita"
+    },
+    "timeframe": {
+      "month": "Este mes",
+      "week": "Esta semana"
+    },
+    "workouts": {
+      "title": "Entrenamientos Recientes",
+      "description": "Tus últimas sesiones de entrenamiento",
+      "empty": "Aún no hay entrenamientos registrados."
+    },
+    "friends": {
+      "title": "Actividad de Amigos",
+      "description": "Mira qué están haciendo tus amigos",
+      "empty": "Aún no has añadido amigos."
+    },
+    "stats": {
+      "title": "Tus Estadísticas",
+      "description": "Estadísticas detalladas sobre tus entrenamientos",
+      "empty": "Aún no hay datos disponibles."
     }
   },
   "workoutForm": {
