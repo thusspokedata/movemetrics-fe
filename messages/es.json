@@ -1,0 +1,61 @@
+{
+  "app": {
+    "title": "MoveMetrics",
+    "description": "Un rastreador de fitness social para registrar y visualizar sesiones de entrenamiento con amigos"
+  },
+  "navigation": {
+    "overview": "Resumen",
+    "workouts": "Entrenamientos",
+    "friends": "Amigos",
+    "stats": "Estadísticas"
+  },
+  "dashboard": {
+    "cards": {
+      "totalWorkouts": "Total de Entrenamientos",
+      "activeFriends": "Amigos Activos",
+      "mostActive": "Más Activo",
+      "favoriteActivity": "Actividad Favorita"
+    }
+  },
+  "workoutForm": {
+    "title": "Registrar Entrenamiento",
+    "activity": "Actividad",
+    "date": "Fecha",
+    "startTime": "Hora de Inicio",
+    "duration": "Duración",
+    "notes": "Notas",
+    "submit": "Guardar",
+    "cancel": "Cancelar",
+    "placeholders": {
+      "activity": "Selecciona una actividad",
+      "notes": "Añade detalles adicionales sobre tu entrenamiento"
+    }
+  },
+  "activities": {
+    "gym": "Gimnasio",
+    "running": "Correr",
+    "swimming": "Natación",
+    "cycling": "Ciclismo",
+    "hiking": "Senderismo",
+    "yoga": "Yoga",
+    "martialArts": "Artes Marciales",
+    "other": "Otro"
+  },
+  "common": {
+    "minutes": "minutos",
+    "hours": "horas",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "settings": "Configuración",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión",
+    "language": "Idioma"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, no pudimos encontrar la página que estás buscando.",
+    "goBack": "Volver atrás",
+    "goHome": "Ir a la página principal"
+  }
+}

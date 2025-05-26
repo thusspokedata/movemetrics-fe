@@ -1,0 +1,61 @@
+{
+  "app": {
+    "title": "MoveMetrics",
+    "description": "A social fitness tracker to log and visualize workout sessions with friends"
+  },
+  "navigation": {
+    "overview": "Overview",
+    "workouts": "Workouts",
+    "friends": "Friends",
+    "stats": "Stats"
+  },
+  "dashboard": {
+    "cards": {
+      "totalWorkouts": "Total Workouts",
+      "activeFriends": "Active Friends",
+      "mostActive": "Most Active",
+      "favoriteActivity": "Favorite Activity"
+    }
+  },
+  "workoutForm": {
+    "title": "Log Workout",
+    "activity": "Activity",
+    "date": "Date",
+    "startTime": "Start Time",
+    "duration": "Duration",
+    "notes": "Notes",
+    "submit": "Save",
+    "cancel": "Cancel",
+    "placeholders": {
+      "activity": "Select an activity",
+      "notes": "Add additional details about your workout"
+    }
+  },
+  "activities": {
+    "gym": "Gym",
+    "running": "Running",
+    "swimming": "Swimming",
+    "cycling": "Cycling",
+    "hiking": "Hiking",
+    "yoga": "Yoga",
+    "martialArts": "Martial Arts",
+    "other": "Other"
+  },
+  "common": {
+    "minutes": "minutes",
+    "hours": "hours",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "language": "Language"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, we couldn't find the page you're looking for.",
+    "goBack": "Go back",
+    "goHome": "Go to home page"
+  }
+}

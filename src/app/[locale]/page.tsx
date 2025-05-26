@@ -1,30 +1,32 @@
-import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { AddWorkoutDialog } from '@/components/workout/add-workout-dialog';
 
 export default function Home() {
+  const t = useTranslations();
+  
   return (
     <div className="container mx-auto py-10">
       <div className="flex flex-col gap-8">
         <div className="flex justify-between items-center">
-          <h1 className="text-4xl font-bold">MoveMetrics</h1>
+          <h1 className="text-4xl font-bold">{t('app.title')}</h1>
           <AddWorkoutDialog />
         </div>
 
         <Tabs defaultValue="overview" className="w-full">
           <TabsList>
-            <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="workouts">Workouts</TabsTrigger>
-            <TabsTrigger value="friends">Friends</TabsTrigger>
-            <TabsTrigger value="stats">Stats</TabsTrigger>
+            <TabsTrigger value="overview">{t('navigation.overview')}</TabsTrigger>
+            <TabsTrigger value="workouts">{t('navigation.workouts')}</TabsTrigger>
+            <TabsTrigger value="friends">{t('navigation.friends')}</TabsTrigger>
+            <TabsTrigger value="stats">{t('navigation.stats')}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview" className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <Card>
                 <CardHeader>
-                  <CardTitle>Total Workouts</CardTitle>
+                  <CardTitle>{t('dashboard.cards.totalWorkouts')}</CardTitle>
                   <CardDescription>This month</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -33,7 +35,7 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Active Friends</CardTitle>
+                  <CardTitle>{t('dashboard.cards.activeFriends')}</CardTitle>
                   <CardDescription>This week</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -42,7 +44,7 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Most Active</CardTitle>
+                  <CardTitle>{t('dashboard.cards.mostActive')}</CardTitle>
                   <CardDescription>This month</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -51,7 +53,7 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Favorite Activity</CardTitle>
+                  <CardTitle>{t('dashboard.cards.favoriteActivity')}</CardTitle>
                   <CardDescription>This month</CardDescription>
                 </CardHeader>
                 <CardContent>

@@ -1,0 +1,61 @@
+{
+  "app": {
+    "title": "MoveMetrics",
+    "description": "Ein sozialer Fitness-Tracker zum Protokollieren und Visualisieren von Trainingssitzungen mit Freunden"
+  },
+  "navigation": {
+    "overview": "Übersicht",
+    "workouts": "Trainings",
+    "friends": "Freunde",
+    "stats": "Statistiken"
+  },
+  "dashboard": {
+    "cards": {
+      "totalWorkouts": "Gesamtanzahl Trainings",
+      "activeFriends": "Aktive Freunde",
+      "mostActive": "Am aktivsten",
+      "favoriteActivity": "Lieblingsaktivität"
+    }
+  },
+  "workoutForm": {
+    "title": "Training protokollieren",
+    "activity": "Aktivität",
+    "date": "Datum",
+    "startTime": "Startzeit",
+    "duration": "Dauer",
+    "notes": "Notizen",
+    "submit": "Speichern",
+    "cancel": "Abbrechen",
+    "placeholders": {
+      "activity": "Wähle eine Aktivität",
+      "notes": "Füge weitere Details zu deinem Training hinzu"
+    }
+  },
+  "activities": {
+    "gym": "Fitnessstudio",
+    "running": "Laufen",
+    "swimming": "Schwimmen",
+    "cycling": "Radfahren",
+    "hiking": "Wandern",
+    "yoga": "Yoga",
+    "martialArts": "Kampfkunst",
+    "other": "Andere"
+  },
+  "common": {
+    "minutes": "Minuten",
+    "hours": "Stunden",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Wiederholen",
+    "settings": "Einstellungen",
+    "profile": "Profil",
+    "logout": "Abmelden",
+    "language": "Sprache"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden.",
+    "goBack": "Zurück",
+    "goHome": "Zur Startseite"
+  }
+}
