@@ -53,6 +53,7 @@ type WorkoutFormValues = z.infer<ReturnType<typeof createWorkoutFormSchema>>;
 export function AddWorkoutForm() {
   const t = useTranslations('workoutForm');
   const tActivities = useTranslations('activities');
+  const tCommon = useTranslations('common');
   
   // Create activities array with translated labels
   const activities = [
@@ -166,7 +167,7 @@ export function AddWorkoutForm() {
             name="duration"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t('duration', { defaultValue: 'Duration' })} ({t('common.minutes', { defaultValue: 'minutes' })})</FormLabel>
+                <FormLabel>{t('duration', { defaultValue: 'Duration' })} ({tCommon('minutes', { defaultValue: 'minutes' })})</FormLabel>
                 <FormControl>
                   <Input type="number" min="1" {...field} />
                 </FormControl>
