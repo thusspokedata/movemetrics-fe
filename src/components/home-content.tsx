@@ -30,7 +30,7 @@ export default function HomeContent() {
               <Card>
                 <CardHeader>
                   <CardTitle>{t('dashboard.cards.totalWorkouts')}</CardTitle>
-                  <CardDescription>This month</CardDescription>
+                  <CardDescription>{t('dashboard.timeframe.month', { defaultValue: 'This month' })}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-2xl font-bold">0</p>
@@ -39,7 +39,7 @@ export default function HomeContent() {
               <Card>
                 <CardHeader>
                   <CardTitle>{t('dashboard.cards.activeFriends')}</CardTitle>
-                  <CardDescription>This week</CardDescription>
+                  <CardDescription>{t('dashboard.timeframe.week', { defaultValue: 'This week' })}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-2xl font-bold">0</p>
@@ -48,7 +48,7 @@ export default function HomeContent() {
               <Card>
                 <CardHeader>
                   <CardTitle>{t('dashboard.cards.mostActive')}</CardTitle>
-                  <CardDescription>This month</CardDescription>
+                  <CardDescription>{t('dashboard.timeframe.month', { defaultValue: 'This month' })}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-2xl font-bold">-</p>
@@ -57,7 +57,7 @@ export default function HomeContent() {
               <Card>
                 <CardHeader>
                   <CardTitle>{t('dashboard.cards.favoriteActivity')}</CardTitle>
-                  <CardDescription>This month</CardDescription>
+                  <CardDescription>{t('dashboard.timeframe.month', { defaultValue: 'This month' })}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-2xl font-bold">-</p>
@@ -69,11 +69,11 @@ export default function HomeContent() {
           <TabsContent value="workouts">
             <Card>
               <CardHeader>
-                <CardTitle>Recent Workouts</CardTitle>
-                <CardDescription>Your latest training sessions</CardDescription>
+                <CardTitle>{t('dashboard.workouts.title', { defaultValue: 'Recent Workouts' })}</CardTitle>
+                <CardDescription>{t('dashboard.workouts.description', { defaultValue: 'Your latest training sessions' })}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">No workouts recorded yet.</p>
+                <p className="text-muted-foreground">{t('dashboard.workouts.empty', { defaultValue: 'No workouts recorded yet.' })}</p>
               </CardContent>
             </Card>
           </TabsContent>
@@ -81,11 +81,11 @@ export default function HomeContent() {
           <TabsContent value="friends">
             <Card>
               <CardHeader>
-                <CardTitle>Friends Activity</CardTitle>
-                <CardDescription>See what your friends are up to</CardDescription>
+                <CardTitle>{t('dashboard.friends.title', { defaultValue: 'Friends Activity' })}</CardTitle>
+                <CardDescription>{t('dashboard.friends.description', { defaultValue: 'See what your friends are up to' })}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">No friends added yet.</p>
+                <p className="text-muted-foreground">{t('dashboard.friends.empty', { defaultValue: 'No friends added yet.' })}</p>
               </CardContent>
             </Card>
           </TabsContent>
@@ -93,11 +93,11 @@ export default function HomeContent() {
           <TabsContent value="stats">
             <Card>
               <CardHeader>
-                <CardTitle>Your Stats</CardTitle>
-                <CardDescription>Detailed statistics about your workouts</CardDescription>
+                <CardTitle>{t('dashboard.stats.title', { defaultValue: 'Your Stats' })}</CardTitle>
+                <CardDescription>{t('dashboard.stats.description', { defaultValue: 'Detailed statistics about your workouts' })}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">No data available yet.</p>
+                <p className="text-muted-foreground">{t('dashboard.stats.empty', { defaultValue: 'No data available yet.' })}</p>
               </CardContent>
             </Card>
           </TabsContent>
