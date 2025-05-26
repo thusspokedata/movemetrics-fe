@@ -36,6 +36,13 @@
       "empty": "Aún no hay datos disponibles."
     }
   },
+  "workout": {
+    "dialog": {
+      "addButton": "Añadir Entrenamiento",
+      "title": "Añadir Nuevo Entrenamiento",
+      "description": "Registra tu sesión de entrenamiento. Completa los detalles a continuación."
+    }
+  },
   "workoutForm": {
     "title": "Registrar Entrenamiento",
     "activity": "Actividad",

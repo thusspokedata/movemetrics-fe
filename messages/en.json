@@ -36,6 +36,13 @@
       "empty": "No data available yet."
     }
   },
+  "workout": {
+    "dialog": {
+      "addButton": "Add Workout",
+      "title": "Add New Workout",
+      "description": "Record your workout session. Fill in the details below."
+    }
+  },
   "workoutForm": {
     "title": "Log Workout",
     "activity": "Activity",

@@ -36,6 +36,13 @@
       "empty": "Noch keine Daten verfügbar."
     }
   },
+  "workout": {
+    "dialog": {
+      "addButton": "Training hinzufügen",
+      "title": "Neues Training hinzufügen",
+      "description": "Zeichne deine Trainingseinheit auf. Fülle die Details unten aus."
+    }
+  },
   "workoutForm": {
     "title": "Training protokollieren",
     "activity": "Aktivität",
