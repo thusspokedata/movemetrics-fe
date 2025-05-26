@@ -8,7 +8,7 @@ import { Toaster } from 'sonner';
 import { QueryClientProviderWrapper } from '@/components/providers/query-client-provider';
 import type { Metadata } from 'next';
 import { LanguageSwitcher } from '@/components/language-switcher';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,16 +30,16 @@ type Props = {
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = params;
+  // Await params before destructuring to access locale
+  const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  
+
+  setRequestLocale(locale);
 
   const messages = await getMessages({ locale });
-
-
 
   return (
     <html lang={locale} suppressHydrationWarning>
