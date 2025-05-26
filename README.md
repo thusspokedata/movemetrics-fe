@@ -1,38 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MoveMetrics
 
-## Getting Started
+A social fitness tracker (written in English) to log and visualize workout sessions (gym, BJJ, running, etc.) with friends. Built using Next.js, shadcn/ui, Tailwind CSS, React Query, and Sonner.
 
-First, run the development server:
+## 🏋️‍♂️ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Workout Logging:**  
+   – Log your workout (activity, date, start time, duration, and optional notes) via a modal dialog.  
+  – (Coming soon) Authentication (Firebase) and data storage (Firebase) so you can persist your workouts.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **UI & UX:**  
+  – Modern, responsive UI (using shadcn/ui and Tailwind CSS)  
+  – Overview (dashboard) with cards (total workouts, active friends, most active, favorite activity)  
+  – Tabs (Overview, Workouts, Friends, Stats) for easy navigation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Tech Stack:**  
+  – **Frontend:** Next.js (15.3.2) (React 19) (App Router)  
+  – **UI:** shadcn/ui (components (button, card, dialog, form, input, select, calendar, popover, tabs, avatar, dropdown, sheet, table, toaster (via sonner), etc.)  
+  – **Styling:** Tailwind CSS (with Prettier (singleQuote, trailingComma, etc.) and ESLint (integrated with Prettier) for code style.)  
+  – **State & Data Fetching:** React Query (TanStack Query) (with a client wrapper (QueryClientProviderWrapper) to avoid hydration errors.)  
+  – (Planned) Firebase (Auth, Firestore) for backend.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1. Clone the repository (or fork it)
+2. Install dependencies (using npm):  
+     npm install
+3. Run the development server (with Turbopack):  
+     npm run dev  
+     (Open [http://localhost:3000](http://localhost:3000) in your browser.)
+4. (Optional) Lint and format your code (using ESLint and Prettier):  
+     npm run lint  
+     npm run format
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+MIT License – feel free to use, modify, and distribute.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+Contributions (issues, PRs, ideas) are welcome! (Please follow conventional commits (e.g. “feat:”, “chore:”, “style:” etc.) and run Prettier (npm run format) before committing.)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+_Last updated: (Current date) (Commit: “feat: initial app setup” + “chore: add prettier and eslint config” + “style: format all files”)_
 
 # movemetrics-fe
