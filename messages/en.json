@@ -54,11 +54,24 @@
     "cancel": "Cancel",
     "placeholders": {
       "activity": "Select an activity",
+      "date": "Pick a date",
       "notes": "Add additional details about your workout"
+    },
+    "descriptions": {
+      "activity": "What type of workout did you do?",
+      "date": "When did you do this workout?",
+      "notes": "Add any additional details about your workout."
+    },
+    "validation": {
+      "activity": "Please select an activity.",
+      "date": "Please select a date.",
+      "startTime": "Please select a start time.",
+      "duration": "Please enter the duration."
     }
   },
   "activities": {
     "gym": "Gym",
+    "bjj": "Brazilian Jiu-Jitsu",
     "running": "Running",
     "swimming": "Swimming",
     "cycling": "Cycling",

@@ -54,11 +54,24 @@
     "cancel": "Abbrechen",
     "placeholders": {
       "activity": "Wähle eine Aktivität",
+      "date": "Wähle ein Datum",
       "notes": "Füge weitere Details zu deinem Training hinzu"
+    },
+    "descriptions": {
+      "activity": "Welche Art von Training hast du gemacht?",
+      "date": "Wann hast du dieses Training gemacht?",
+      "notes": "Füge weitere Details zu deinem Training hinzu."
+    },
+    "validation": {
+      "activity": "Bitte wähle eine Aktivität aus.",
+      "date": "Bitte wähle ein Datum aus.",
+      "startTime": "Bitte wähle eine Startzeit aus.",
+      "duration": "Bitte gib die Dauer ein."
     }
   },
   "activities": {
     "gym": "Fitnessstudio",
+    "bjj": "Brazilian Jiu-Jitsu",
     "running": "Laufen",
     "swimming": "Schwimmen",
     "cycling": "Radfahren",
