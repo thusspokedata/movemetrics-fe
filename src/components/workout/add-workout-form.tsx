@@ -54,7 +54,7 @@ export function AddWorkoutForm() {
   const t = useTranslations('workoutForm');
   const tActivities = useTranslations('activities');
   const tCommon = useTranslations('common');
-  
+
   // Create activities array with translated labels
   const activities = [
     { value: 'gym', label: tActivities('gym') },
@@ -65,10 +65,10 @@ export function AddWorkoutForm() {
     { value: 'yoga', label: tActivities('yoga') },
     { value: 'other', label: tActivities('other') },
   ];
-  
+
   // Create the schema with translations
   const workoutFormSchema = createWorkoutFormSchema(t);
-  
+
   const form = useForm<WorkoutFormValues>({
     resolver: zodResolver(workoutFormSchema),
     defaultValues: {
@@ -104,7 +104,9 @@ export function AddWorkoutForm() {
                   ))}
                 </SelectContent>
               </Select>
-              <FormDescription>{t('descriptions.activity', { defaultValue: 'What type of workout did you do?' })}</FormDescription>
+              <FormDescription>
+                {t('descriptions.activity', { defaultValue: 'What type of workout did you do?' })}
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -126,7 +128,11 @@ export function AddWorkoutForm() {
                         !field.value && 'text-muted-foreground'
                       )}
                     >
-                      {field.value ? format(field.value, 'PPP') : <span>{t('placeholders.date', { defaultValue: 'Pick a date' })}</span>}
+                      {field.value ? (
+                        format(field.value, 'PPP')
+                      ) : (
+                        <span>{t('placeholders.date', { defaultValue: 'Pick a date' })}</span>
+                      )}
                       <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
                     </Button>
                   </FormControl>
@@ -141,7 +147,9 @@ export function AddWorkoutForm() {
                   />
                 </PopoverContent>
               </Popover>
-              <FormDescription>{t('descriptions.date', { defaultValue: 'When did you do this workout?' })}</FormDescription>
+              <FormDescription>
+                {t('descriptions.date', { defaultValue: 'When did you do this workout?' })}
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -167,7 +175,10 @@ export function AddWorkoutForm() {
             name="duration"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t('duration', { defaultValue: 'Duration' })} ({tCommon('minutes', { defaultValue: 'minutes' })})</FormLabel>
+                <FormLabel>
+                  {t('duration', { defaultValue: 'Duration' })} (
+                  {tCommon('minutes', { defaultValue: 'minutes' })})
+                </FormLabel>
                 <FormControl>
                   <Input type="number" min="1" {...field} />
                 </FormControl>
@@ -186,7 +197,6 @@ export function AddWorkoutForm() {
               <FormControl>
                 <Input placeholder={t('placeholders.notes')} {...field} />
               </FormControl>
-              <FormDescription>{t('descriptions.notes', { defaultValue: 'Add any additional details about your workout.' })}</FormDescription>
               <FormMessage />
             </FormItem>
           )}
