@@ -1,0 +1,100 @@
+{
+  "app": {
+    "title": "MoveMetrics",
+    "description": "Ein sozialer Fitness-Tracker zum Protokollieren und Visualisieren von Trainingssitzungen mit Freunden"
+  },
+  "navigation": {
+    "overview": "Übersicht",
+    "workouts": "Trainings",
+    "friends": "Freunde",
+    "stats": "Statistiken"
+  },
+  "dashboard": {
+    "cards": {
+      "totalWorkouts": "Gesamtanzahl Trainings",
+      "activeFriends": "Aktive Freunde",
+      "mostActive": "Am aktivsten",
+      "favoriteActivity": "Lieblingsaktivität"
+    },
+    "timeframe": {
+      "month": "Diesen Monat",
+      "week": "Diese Woche"
+    },
+    "workouts": {
+      "title": "Neueste Trainings",
+      "description": "Deine letzten Trainingseinheiten",
+      "empty": "Noch keine Trainings aufgezeichnet."
+    },
+    "friends": {
+      "title": "Freundesaktivität",
+      "description": "Sieh, was deine Freunde machen",
+      "empty": "Noch keine Freunde hinzugefügt."
+    },
+    "stats": {
+      "title": "Deine Statistiken",
+      "description": "Detaillierte Statistiken über deine Trainings",
+      "empty": "Noch keine Daten verfügbar."
+    }
+  },
+  "workout": {
+    "dialog": {
+      "addButton": "Training hinzufügen",
+      "title": "Neues Training hinzufügen",
+      "description": "Zeichne deine Trainingseinheit auf. Fülle die Details unten aus."
+    }
+  },
+  "workoutForm": {
+    "title": "Training protokollieren",
+    "activity": "Aktivität",
+    "date": "Datum",
+    "startTime": "Startzeit",
+    "duration": "Dauer",
+    "notes": "Notizen",
+    "submit": "Speichern",
+    "cancel": "Abbrechen",
+    "placeholders": {
+      "activity": "Wähle eine Aktivität",
+      "date": "Wähle ein Datum",
+      "notes": "Füge weitere Details zu deinem Training hinzu"
+    },
+    "descriptions": {
+      "activity": "Welche Art von Training hast du gemacht?",
+      "date": "Wann hast du dieses Training gemacht?",
+      "notes": "Füge weitere Details zu deinem Training hinzu."
+    },
+    "validation": {
+      "activity": "Bitte wähle eine Aktivität aus.",
+      "date": "Bitte wähle ein Datum aus.",
+      "startTime": "Bitte wähle eine Startzeit aus.",
+      "duration": "Bitte gib die Dauer ein."
+    }
+  },
+  "activities": {
+    "gym": "Fitnessstudio",
+    "bjj": "Brazilian Jiu-Jitsu",
+    "running": "Laufen",
+    "swimming": "Schwimmen",
+    "cycling": "Radfahren",
+    "hiking": "Wandern",
+    "yoga": "Yoga",
+    "martialArts": "Kampfkunst",
+    "other": "Andere"
+  },
+  "common": {
+    "minutes": "Minuten",
+    "hours": "Stunden",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Wiederholen",
+    "settings": "Einstellungen",
+    "profile": "Profil",
+    "logout": "Abmelden",
+    "language": "Sprache"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden.",
+    "goBack": "Zurück",
+    "goHome": "Zur Startseite"
+  }
+}

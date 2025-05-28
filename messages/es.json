@@ -1,0 +1,100 @@
+{
+  "app": {
+    "title": "MoveMetrics",
+    "description": "Un rastreador de fitness social para registrar y visualizar sesiones de entrenamiento con amigos"
+  },
+  "navigation": {
+    "overview": "Resumen",
+    "workouts": "Entrenamientos",
+    "friends": "Amigos",
+    "stats": "Estadísticas"
+  },
+  "dashboard": {
+    "cards": {
+      "totalWorkouts": "Total de Entrenamientos",
+      "activeFriends": "Amigos Activos",
+      "mostActive": "Más Activo",
+      "favoriteActivity": "Actividad Favorita"
+    },
+    "timeframe": {
+      "month": "Este mes",
+      "week": "Esta semana"
+    },
+    "workouts": {
+      "title": "Entrenamientos Recientes",
+      "description": "Tus últimas sesiones de entrenamiento",
+      "empty": "Aún no hay entrenamientos registrados."
+    },
+    "friends": {
+      "title": "Actividad de Amigos",
+      "description": "Mira qué están haciendo tus amigos",
+      "empty": "Aún no has añadido amigos."
+    },
+    "stats": {
+      "title": "Tus Estadísticas",
+      "description": "Estadísticas detalladas sobre tus entrenamientos",
+      "empty": "Aún no hay datos disponibles."
+    }
+  },
+  "workout": {
+    "dialog": {
+      "addButton": "Añadir Entrenamiento",
+      "title": "Añadir Nuevo Entrenamiento",
+      "description": "Registra tu sesión de entrenamiento. Completa los detalles a continuación."
+    }
+  },
+  "workoutForm": {
+    "title": "Registrar Entrenamiento",
+    "activity": "Actividad",
+    "date": "Fecha",
+    "startTime": "Hora de Inicio",
+    "duration": "Duración",
+    "notes": "Notas",
+    "submit": "Guardar",
+    "cancel": "Cancelar",
+    "placeholders": {
+      "activity": "Selecciona una actividad",
+      "date": "Selecciona una fecha",
+      "notes": "Añade detalles adicionales sobre tu entrenamiento"
+    },
+    "descriptions": {
+      "activity": "¿Qué tipo de entrenamiento hiciste?",
+      "date": "¿Cuándo realizaste este entrenamiento?",
+      "notes": "Añade cualquier detalle adicional sobre tu entrenamiento."
+    },
+    "validation": {
+      "activity": "Por favor, selecciona una actividad.",
+      "date": "Por favor, selecciona una fecha.",
+      "startTime": "Por favor, selecciona una hora de inicio.",
+      "duration": "Por favor, ingresa la duración."
+    }
+  },
+  "activities": {
+    "gym": "Gimnasio",
+    "bjj": "Jiu-Jitsu Brasileño",
+    "running": "Correr",
+    "swimming": "Natación",
+    "cycling": "Ciclismo",
+    "hiking": "Senderismo",
+    "yoga": "Yoga",
+    "martialArts": "Artes Marciales",
+    "other": "Otro"
+  },
+  "common": {
+    "minutes": "minutos",
+    "hours": "horas",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "retry": "Reintentar",
+    "settings": "Configuración",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión",
+    "language": "Idioma"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, no pudimos encontrar la página que estás buscando.",
+    "goBack": "Volver atrás",
+    "goHome": "Ir a la página principal"
+  }
+}
