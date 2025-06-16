@@ -96,5 +96,12 @@
     "description": "Entschuldigung, wir konnten die gesuchte Seite nicht finden.",
     "goBack": "Zurück",
     "goHome": "Zur Startseite"
+  },
+  "auth": {
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "signOut": "Abmelden",
+    "myAccount": "Mein Konto",
+    "profile": "Profil"
   }
 }

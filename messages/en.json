@@ -96,5 +96,12 @@
     "description": "Sorry, we couldn't find the page you're looking for.",
     "goBack": "Go back",
     "goHome": "Go to home page"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "myAccount": "My Account",
+    "profile": "Profile"
   }
 }

@@ -9,6 +9,8 @@ import { QueryClientProviderWrapper } from '@/components/providers/query-client-
 import type { Metadata } from 'next';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { getMessages, setRequestLocale } from 'next-intl/server';
+import { ClerkProvider } from '@clerk/nextjs';
+import { AuthButtons } from '@/components/auth/auth-buttons';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -42,19 +44,22 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <QueryClientProviderWrapper>
-            <div className="flex justify-end p-2">
-              <LanguageSwitcher />
-            </div>
-            <main className="min-h-screen bg-background">{children}</main>
-            <Toaster />
-            <ReactQueryDevtools initialIsOpen={false} />
-          </QueryClientProviderWrapper>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang={locale} suppressHydrationWarning>
+        <body className={inter.className} suppressHydrationWarning>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <QueryClientProviderWrapper>
+              <div className="flex justify-between items-center p-2">
+                <AuthButtons />
+                <LanguageSwitcher />
+              </div>
+              <main className="min-h-screen bg-background">{children}</main>
+              <Toaster />
+              <ReactQueryDevtools initialIsOpen={false} />
+            </QueryClientProviderWrapper>
+          </NextIntlClientProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

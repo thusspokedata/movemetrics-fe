@@ -96,5 +96,12 @@
     "description": "Lo sentimos, no pudimos encontrar la página que estás buscando.",
     "goBack": "Volver atrás",
     "goHome": "Ir a la página principal"
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signUp": "Registrarse",
+    "signOut": "Cerrar Sesión",
+    "myAccount": "Mi Cuenta",
+    "profile": "Perfil"
   }
 }
