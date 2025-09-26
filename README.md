@@ -45,3 +45,5 @@ Contributions (issues, PRs, ideas) are welcome! (Please follow conventional comm
 _Last updated: (Current date) (Commit: “feat: initial app setup” + “chore: add prettier and eslint config” + “style: format all files”)_
 
 # movemetrics-fe
+
+Testing new signing
